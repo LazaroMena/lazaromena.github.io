@@ -73,8 +73,7 @@ section {
 }
 
 .text {
-  background-image: url('lazaromena.github.io
-/img1.jpg');
+  background-image: url('/img1.jpg');
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Anton", sans-serif;
