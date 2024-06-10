@@ -149,14 +149,14 @@ body.dark-mode nav {
 }
 
 body.dark-mode .nav-links li a {
-    color: #e0e0e0;
+    color: #8c8c8c;
 }
 
 body.dark-mode input[type="text"],
 body.dark-mode input[type="email"],
 body.dark-mode textarea {
     background-color: #333;
-    color: #e0e0e0;
+    color: #8c8c8c;
     border: 1px solid #555;
 }
 
