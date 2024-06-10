@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const menuToggle = document.getElementById("mobile-menu");
     const navLinks = document.getElementById("nav-links");
     const darkModeToggle = document.getElementById("dark-mode-toggle");
-    const darkModeIcon = darkModeToggle.querySelector('i');
+    const darkModeIcon = document.getElementById("dark-mode-icon");
 
     form.addEventListener("submit", function(event) {
         event.preventDefault();
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const name = formData.get("name");
         const email = formData.get("email");
         const message = formData.get("message");
-        // Aquí va el codigo para enviar el formulario
+        // Aquí puedes agregar la lógica para enviar el formulario
         console.log("Nombre: ", name);
         console.log("Correo electrónico: ", email);
         console.log("Mensaje: ", message);
@@ -26,11 +26,9 @@ document.addEventListener("DOMContentLoaded", function() {
     darkModeToggle.addEventListener("click", function() {
         document.body.classList.toggle("dark-mode");
         if (document.body.classList.contains("dark-mode")) {
-            darkModeIcon.classList.remove('fa-moon');
-            darkModeIcon.classList.add('fa-sun');
+            darkModeIcon.src = 'lightmode.png';
         } else {
-            darkModeIcon.classList.remove('fa-sun');
-            darkModeIcon.classList.add('fa-moon');
+            darkModeIcon.src = 'darkmode.png';
         }
     });
 });

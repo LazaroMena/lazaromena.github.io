@@ -1,191 +1,211 @@
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  transition: background-color 0.3s, color 0.3s;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 header {
-  background-color: #2e4568;
-  padding: 20px;
-  text-align: center;
-  transition: background-color 0.3s;
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s;
 }
 
 nav {
-  background-color: #007bff;
-  padding: 10px 0;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    background-color: #007bff;
+    padding: 10px 0;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav-links {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  display: flex;
-  justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 .nav-links li {
-  margin: 0 15px;
+    margin: 0 15px;
 }
 
 .nav-links li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 .nav-links li a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .menu-toggle {
-  display: none;
-  cursor: pointer;
+    display: none;
+    cursor: pointer;
 }
 
 .menu-toggle .bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: #fff;
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
 }
 
 h1, h2 {
-  color: #333;
+    color: #333;
 }
 
 section {
-  padding: 50px 20px;
+    padding: 50px 20px;
 }
 
 #services ul {
-  list-style-type: none;
-  padding: 0;
+    list-style-type: none;
+    padding: 0;
 }
 
 .text {
-  background-image: url('/img1.jpg');
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: "Anton", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 40px;
-}
+    background-image: url('img1.jpg');
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+  }
+  
+  .lema {
+    color: #fff;
+  }
 
-.lema {
-  color: #fff;
-}
-
-#home, #services, #about, #contact {
-  text-align: center;
-  padding: 100px 0;
-}
+  #home, #services, #about, #contact {
+    text-align: center;
+    padding: 100px 0;
+  }
 
 form {
-  display: grid;
-  grid-gap: 10px;
+    display: grid;
+    grid-gap: 10px;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 button:hover {
-  background-color: #0056b3;
+    background-color: #0056b3;
 }
 
 footer {
-  background-color: #2e4568;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
 }
-
 
 #dark-mode-toggle {
-  background-color: transparent;
-  border: none;
-  color: white;
-  font-size: 20px;
-  cursor: pointer;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
-#dark-mode-toggle:hover {
-  color: #ccc;
+#dark-mode-toggle img {
+    width: 24px;
+    height: 24px;
 }
 
 body.dark-mode {
-  background-color: #121212;
-  color: #e0e0e0;
+    background-color: #121212;
+    color: #e0e0e0;
 }
 
 body.dark-mode header {
-  background-color: #1f1f1f;
+    background-color: #1f1f1f;
 }
 
 body.dark-mode nav {
-  background-color: #333;
+    background-color: #333;
 }
 
 body.dark-mode .nav-links li a {
-  color: #e0e0e0;
+    color: #e0e0e0;
 }
 
 body.dark-mode input[type="text"],
 body.dark-mode input[type="email"],
 body.dark-mode textarea {
-  background-color: #333;
-  color: #e0e0e0;
-  border: 1px solid #555;
+    background-color: #333;
+    color: #e0e0e0;
+    border: 1px solid #555;
 }
 
 body.dark-mode button {
-  background-color: #0056b3;
+    background-color: #0056b3;
 }
 
 body.dark-mode footer {
-  background-color: #1f1f1f;
+    background-color: #1f1f1f;
+}
+
+body.dark-mode #dark-mode-toggle img {
+    filter: invert(1);
+}
+
+.image-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    transition: opacity 0.3s, border-radius 0.3s;
+    opacity: 0.7;
+    border-radius: 20px;
+}
+
+.image-container img:hover {
+    opacity: 1;
+    border-radius: 50px;
 }
 
 @media (max-width: 768px) {
-  .nav-links {
-      display: none;
-      flex-direction: column;
-  }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
 
-  .nav-links li {
-      margin: 10px 0;
-  }
+    .nav-links li {
+        margin: 10px 0;
+    }
 
-  .menu-toggle {
-      display: block;
-  }
+    .menu-toggle {
+        display: block;
+    }
 
-  .nav-links.active {
-      display: flex;
-  }
+    .nav-links.active {
+        display: flex;
+    }
 }
